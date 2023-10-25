@@ -23,6 +23,10 @@ def open_q1():
     dpg.configure_item("main", show=False)
     dpg.configure_item("q1", show=True)
     dpg.set_primary_window("q1",True)
+def open_q2():
+    dpg.configure_item("q1", show=False)
+    dpg.configure_item("q2", show=True)
+    dpg.set_primary_window("q2",True)
 
 
 # Вопрос 1
