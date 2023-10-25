@@ -128,10 +128,6 @@ def final():
     dpg.configure_item("result", show=True)
     dpg.set_primary_window("result", True)
 
-def final():
-    dpg.configure_item("q33", show=False)
-    dpg.configure_item("q9", show=True)
-    dpg.set_primary_window("q9", True)
 
 
 def return_1():
