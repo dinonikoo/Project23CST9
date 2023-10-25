@@ -60,7 +60,18 @@ def get_php():
     dpg.configure_item("q7", show=False)
     dpg.configure_item("php", show=True)
     dpg.set_primary_window("php", True)
-    
+
+def get_java():
+    dpg.configure_item("q8", show=False)
+    dpg.configure_item("java", show=True)
+    dpg.set_primary_window("java", True)
+
+def get_who():
+    dpg.configure_item("q8", show=False)
+    dpg.configure_item("who", show=True)
+    dpg.set_primary_window("who", True)
+
+
 
 def open_q1():
     dpg.configure_item("main", show=False)
