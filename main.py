@@ -21,11 +21,11 @@ dpg.set_viewport_max_width(window_width)
 
 
 
-def open_q1():
-    dpg.configure_item("main", show=False)
-    dpg.configure_item("q1", show=True)
-    dpg.set_primary_window("q1",True)
-
+def get_1c():
+    dpg.configure_item("q1", show=False)
+    dpg.configure_item("1c", show=True)
+    dpg.set_primary_window("1c", True)
+    
 def get_pascal():
     dpg.configure_item("q31", show=False)
     dpg.configure_item("pascal", show=True)
@@ -45,6 +45,14 @@ def get_csharp():
     dpg.configure_item("q5", show=False)
     dpg.configure_item("csharp", show=True)
     dpg.set_primary_window("csharp", True)
+
+
+
+def open_q1():
+    dpg.configure_item("main", show=False)
+    dpg.configure_item("q1", show=True)
+    dpg.set_primary_window("q1",True)
+
 
 # Вопрос 1
 with dpg.window(no_resize=True, no_title_bar=True, show=False,
