@@ -19,6 +19,33 @@ dpg.configure_viewport(0, x_pos=400, y_pos=150, width=window_width, height=windo
 dpg.set_viewport_max_height(window_height)
 dpg.set_viewport_max_width(window_width)
 
+def open_q1():
+    dpg.configure_item("main", show=False)
+    dpg.configure_item("q1", show=True)
+    dpg.set_primary_window("q1",True)
+
+
+# Вопрос 1
+with dpg.window(no_resize=True, no_title_bar=True, show=False,
+                tag="q1") as q1:
+    with dpg.group(horizontal=True):
+        title_q1 = dpg.add_text(
+            default_value="Вопрос 1",
+            pos=[window_width//2 - 95, window_height//2 - 260]
+        )
+        dpg.bind_item_font(title_q1, custom_font)
+        q1 = dpg.add_text(
+            default_value="Знаешь английский язык?",
+            pos=[window_width//2 - 425, window_height//2 - 180]
+        )
+        dpg.add_separator()
+        button_yes = dpg.add_button(label=" Да ", pos = [window_width//2 - 140, window_height//2 + 30],
+                                    callback=open_q2)
+        dpg.bind_item_font(button_yes, custom_font)
+        button_no = dpg.add_button(label=" Нет ", pos = [window_width//2 + 30, window_height//2 + 30],
+                                   callback=get_1c)
+        dpg.bind_item_font(button_no, custom_font)
+
 # Главное окно
 with dpg.window(no_resize=True, no_title_bar=True,
                 tag="main") as main:
