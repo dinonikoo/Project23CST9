@@ -5,6 +5,15 @@ dpg.create_context()
 window_width = 1000
 window_height = 600
 
+# Шрифты
+with dpg.font_registry():
+    with dpg.font(file="fonts/content.ttf", size=30) as default_font:
+        dpg.add_font_range_hint(dpg.mvFontRangeHint_Cyrillic)
+    with dpg.font(file="fonts/content.ttf", size=40) as custom_font:
+        dpg.add_font_range_hint(dpg.mvFontRangeHint_Cyrillic)
+    with dpg.font(file="fonts/content.ttf", size=100) as big_font:
+        dpg.add_font_range_hint(dpg.mvFontRangeHint_Cyrillic)
+
 dpg.create_viewport(title="Test HSE2023", resizable=False, small_icon="logo.ico")
 dpg.configure_viewport(0, x_pos=400, y_pos=150, width=window_width, height=window_height)
 dpg.set_viewport_max_height(window_height)
