@@ -354,6 +354,168 @@ with dpg.window(no_resize=True, no_title_bar=True,
         dpg.bind_item_font(start_button, custom_font)
 
 
+# Окно с результатом
+
+with dpg.window(no_resize=True, no_title_bar=True, show=False,
+                tag="1c") as c1:
+    with dpg.group(horizontal=True):
+        title = dpg.add_text(
+            default_value="Твой результат...",
+            pos=[window_width//2 - 260, window_height//2 - 160]
+        )
+        dpg.bind_item_font(title, custom_font)
+        res = dpg.add_text(
+            default_value="1C",
+            pos = [window_width//2 + 30, window_height//2 - 80]
+        )
+        dpg.bind_item_font(res, big_font)
+        start_button = dpg.add_button(label="Вернуться в начало", pos=[window_width // 2 - 130, window_height // 2 + 45],callback=return_1)
+        dpg.bind_item_font(start_button, custom_font)
+
+with dpg.window(no_resize=True, no_title_bar=True, show=False,
+                tag="pascal") as pascal:
+    with dpg.group(horizontal=True):
+        title = dpg.add_text(
+            default_value="Твой результат...",
+            pos=[window_width//2 - 400, window_height//2 - 160]
+        )
+        dpg.bind_item_font(title, custom_font)
+        res = dpg.add_text(
+            default_value="PascalABC.NET",
+            pos=[window_width // 2 - 265, window_height // 2 - 90]
+        )
+        dpg.bind_item_font(res, big_font)
+        start_button = dpg.add_button(label="Вернуться в начало", pos=[window_width // 2 - 30, window_height // 2 + 25],callback=return_2)
+        dpg.bind_item_font(start_button, custom_font)
+
+with dpg.window(no_resize=True, no_title_bar=True, show=False,
+                tag="cpp") as cpp:
+    with dpg.group(horizontal=True):
+        title = dpg.add_text(
+            default_value="Твой результат...",
+            pos=[window_width//2 - 300, window_height//2 - 160]
+        )
+        dpg.bind_item_font(title, custom_font)
+        res = dpg.add_text(
+            default_value="C++",
+            pos = [window_width//2 + 30, window_height//2 - 90]
+        )
+        dpg.bind_item_font(res, big_font)
+        start_button = dpg.add_button(label="Вернуться в начало",
+                                      pos=[window_width // 2 - 105, window_height // 2 + 30],callback=return_3)
+        dpg.bind_item_font(start_button, custom_font)
+
+with dpg.window(no_resize=True, no_title_bar=True, show=False,
+                tag="swift") as swift:
+    with dpg.group(horizontal=True):
+        title = dpg.add_text(
+            default_value="Твой результат...",
+            pos=[window_width//2 - 300, window_height//2 - 160]
+        )
+        dpg.bind_item_font(title, custom_font)
+        res = dpg.add_text(
+            default_value="Swift",
+            pos = [window_width//2 + 15, window_height//2 - 90]
+        )
+        dpg.bind_item_font(res, big_font)
+        start_button = dpg.add_button(label="Вернуться в начало",
+                                      pos=[window_width // 2 - 125, window_height // 2 + 30],callback=return_4)
+        dpg.bind_item_font(start_button, custom_font)
+
+with dpg.window(no_resize=True, no_title_bar=True, show=False,
+                tag="csharp") as csharp:
+    with dpg.group(horizontal=True):
+        title = dpg.add_text(
+            default_value="Твой результат...",
+            pos=[window_width//2 - 260, window_height//2 - 160]
+        )
+        dpg.bind_item_font(title, custom_font)
+        res = dpg.add_text(
+            default_value="C#",
+            pos = [window_width//2 + 30, window_height//2 - 80]
+        )
+        dpg.bind_item_font(res, big_font)
+        start_button = dpg.add_button(label="Вернуться в начало",
+                                      pos=[window_width // 2 - 130, window_height // 2 + 45],callback=return_5)
+        dpg.bind_item_font(start_button, custom_font)
+
+with dpg.window(no_resize=True, no_title_bar=True, show=False,
+                tag="python") as python:
+    with dpg.group(horizontal=True):
+        title = dpg.add_text(
+            default_value="Твой результат...",
+            pos=[window_width//2 - 340, window_height//2 - 160]
+        )
+        dpg.bind_item_font(title, custom_font)
+        res = dpg.add_text(
+            default_value="Python",
+            pos = [window_width//2 - 40, window_height//2 - 90]
+        )
+        dpg.bind_item_font(res, big_font)
+        start_button = dpg.add_button(label="Вернуться в начало", pos=[window_width // 2 - 95, window_height // 2 + 35],callback=return_6)
+        dpg.bind_item_font(start_button, custom_font)
+
+with dpg.window(no_resize=True, no_title_bar=True, show=False,
+                tag="javascript") as javascript:
+    with dpg.group(horizontal=True):
+        title = dpg.add_text(
+            default_value="Твой результат...",
+            pos=[window_width//2 - 370, window_height//2 - 160]
+        )
+        dpg.bind_item_font(title, custom_font)
+        res = dpg.add_text(
+            default_value="JavaScript",
+            pos = [window_width//2 - 190, window_height//2 - 90]
+        )
+        dpg.bind_item_font(res, big_font)
+        start_button = dpg.add_button(label="Вернуться в начало", pos=[window_width // 2 - 70, window_height // 2 + 45],callback=return_7)
+        dpg.bind_item_font(start_button, custom_font)
+
+with dpg.window(no_resize=True, no_title_bar=True, show=False,
+                tag="php") as php:
+    with dpg.group(horizontal=True):
+        title = dpg.add_text(
+            default_value="Твой результат...",
+            pos=[window_width//2 - 330, window_height//2 - 160]
+        )
+        dpg.bind_item_font(title, custom_font)
+        res = dpg.add_text(
+            default_value="PHP",
+            pos = [window_width//2 + 90, window_height//2 - 90]
+        )
+        dpg.bind_item_font(res, big_font)
+        start_button = dpg.add_button(label="Вернуться в начало", pos=[window_width // 2 - 90, window_height // 2 + 45],callback=return_8)
+        dpg.bind_item_font(start_button, custom_font)
+
+with dpg.window(no_resize=True, no_title_bar=True, show=False,
+                tag="java") as java:
+    with dpg.group(horizontal=True):
+        title = dpg.add_text(
+            default_value="Твой результат...",
+            pos=[window_width//2 - 300, window_height//2 - 160]
+        )
+        dpg.bind_item_font(title, custom_font)
+        res = dpg.add_text(
+            default_value="Java",
+            pos = [window_width//2 + 30, window_height//2 - 90]
+        )
+        dpg.bind_item_font(res, big_font)
+        start_button = dpg.add_button(label="Вернуться в начало", pos=[window_width // 2 - 105, window_height // 2 + 30],callback=return_9)
+        dpg.bind_item_font(start_button, custom_font)
+
+with dpg.window(no_resize=True, no_title_bar=True, show=False,
+                tag="who") as who:
+    with dpg.group(horizontal=True):
+        title = dpg.add_text(
+            default_value="Что тобою движет?...",
+            pos=[window_width//2 - 210, window_height//2 - 100]
+        )
+        dpg.bind_item_font(title, custom_font)
+        start_button = dpg.add_button(label="Вернуться в начало",
+                                      pos=[window_width // 2 - 220, window_height // 2 - 30],callback=return_0)
+        dpg.bind_item_font(start_button, custom_font)
+
+
 dpg.bind_font(default_font)
 dpg.set_primary_window(window=main, value=True)
 dpg.setup_dearpygui()
