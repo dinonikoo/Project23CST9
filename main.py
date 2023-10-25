@@ -100,6 +100,27 @@ with dpg.window(no_resize=True, no_title_bar=True, show=False,
                                    callback=get_1c)
         dpg.bind_item_font(button_no, custom_font)
 
+# Вопрос 4
+with dpg.window(no_resize=True, no_title_bar=True, show=False,
+                tag="q4") as q4:
+    with dpg.group(horizontal=True):
+        title_q1 = dpg.add_text(
+            default_value="Вопрос 4",
+            pos=[window_width//2 - 95, window_height//2 - 260]
+        )
+        dpg.bind_item_font(title_q1, custom_font)
+        q1 = dpg.add_text(
+            default_value="Любишь понты?",
+            pos=[window_width//2 - 425, window_height//2 - 180]
+        )
+        dpg.add_separator()
+        button_yes = dpg.add_button(label=" Да ", pos = [window_width//2 - 140, window_height//2 + 30],
+                                    callback=get_swift)
+        dpg.bind_item_font(button_yes, custom_font)
+        button_no = dpg.add_button(label=" Нет ", pos = [window_width//2 + 30, window_height//2 + 30],
+                                   callback=open_q5)
+        dpg.bind_item_font(button_no, custom_font)
+
 # Главное окно
 with dpg.window(no_resize=True, no_title_bar=True,
                 tag="main") as main:
