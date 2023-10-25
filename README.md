@@ -5,5 +5,6 @@ P.S.: Данный тест несёт юмористический характ
 
 Всего хорошего!
 
+Скриншоты работы программы: https://github.com/dinonikoo/Project23CST9/blob/master/screenshots.zip
 
 ![Котик](https://github.com/dinonikoo/Project23CST9/blob/master/cat.png)
