@@ -19,6 +19,60 @@ dpg.configure_viewport(0, x_pos=400, y_pos=150, width=window_width, height=windo
 dpg.set_viewport_max_height(window_height)
 dpg.set_viewport_max_width(window_width)
 
+
+
+def get_1c():
+    dpg.configure_item("q1", show=False)
+    dpg.configure_item("1c", show=True)
+    dpg.set_primary_window("1c", True)
+    
+def get_pascal():
+    dpg.configure_item("q31", show=False)
+    dpg.configure_item("pascal", show=True)
+    dpg.set_primary_window("pascal", True)
+
+def get_cpp():
+    dpg.configure_item("q33", show=False)
+    dpg.configure_item("cpp", show=True)
+    dpg.set_primary_window("cpp", True)
+
+def get_swift():
+    dpg.configure_item("q4", show=False)
+    dpg.configure_item("swift", show=True)
+    dpg.set_primary_window("swift", True)
+
+def get_csharp():
+    dpg.configure_item("q5", show=False)
+    dpg.configure_item("csharp", show=True)
+    dpg.set_primary_window("csharp", True)
+
+def get_python():
+    dpg.configure_item("q5", show=False)
+    dpg.configure_item("python", show=True)
+    dpg.set_primary_window("python", True)
+
+def get_javascript():
+    dpg.configure_item("q6", show=False)
+    dpg.configure_item("javascript", show=True)
+    dpg.set_primary_window("javascript", True)
+
+def get_php():
+    dpg.configure_item("q7", show=False)
+    dpg.configure_item("php", show=True)
+    dpg.set_primary_window("php", True)
+
+def get_java():
+    dpg.configure_item("q8", show=False)
+    dpg.configure_item("java", show=True)
+    dpg.set_primary_window("java", True)
+
+def get_who():
+    dpg.configure_item("q8", show=False)
+    dpg.configure_item("who", show=True)
+    dpg.set_primary_window("who", True)
+
+
+
 def open_q1():
     dpg.configure_item("main", show=False)
     dpg.configure_item("q1", show=True)
