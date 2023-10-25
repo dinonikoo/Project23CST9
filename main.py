@@ -46,6 +46,16 @@ def get_csharp():
     dpg.configure_item("csharp", show=True)
     dpg.set_primary_window("csharp", True)
 
+def get_python():
+    dpg.configure_item("q5", show=False)
+    dpg.configure_item("python", show=True)
+    dpg.set_primary_window("python", True)
+
+def get_javascript():
+    dpg.configure_item("q6", show=False)
+    dpg.configure_item("javascript", show=True)
+    dpg.set_primary_window("javascript", True)
+
 
 
 def open_q1():
