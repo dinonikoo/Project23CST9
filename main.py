@@ -225,6 +225,68 @@ with dpg.window(no_resize=True, no_title_bar=True, show=False,
         button_2 = dpg.add_button(label=" За 50 ", pos=[window_width // 2 + 220, window_height // 2 + 30],
                                   callback=open_q33)
         dpg.bind_item_font(button_2, custom_font)
+# Вопрос 3.1
+with dpg.window(no_resize=True, no_title_bar=True, show=False,
+                tag="q31") as q31:
+    with dpg.group(horizontal=True):
+        title_q1 = dpg.add_text(
+            default_value="Вопрос 3",
+            pos=[window_width//2 - 95, window_height//2 - 260]
+        )
+        dpg.bind_item_font(title_q1, custom_font)
+        q1 = dpg.add_text(
+            default_value="Ты готов страдать?",
+            pos=[window_width//2 - 425, window_height//2 - 180]
+        )
+        dpg.add_separator()
+        button_yes = dpg.add_button(label=" Да ", pos = [window_width//2 - 140, window_height//2 + 30],
+                                        callback=get_pascal)
+        dpg.bind_item_font(button_yes, custom_font)
+        button_no = dpg.add_button(label=" Нет ", pos = [window_width//2 + 30, window_height//2 + 30],
+                                       callback=open_q4)
+        dpg.bind_item_font(button_no, custom_font)
+
+# Вопрос 3.2
+with dpg.window(no_resize=True, no_title_bar=True, show=False,
+                tag="q32") as q32:
+    with dpg.group(horizontal=True):
+        title_q1 = dpg.add_text(
+            default_value="Вопрос 3",
+            pos=[window_width//2 - 95, window_height//2 - 260]
+        )
+        dpg.bind_item_font(title_q1, custom_font)
+        q1 = dpg.add_text(
+            default_value="Ты готов страдать?",
+            pos=[window_width//2 - 425, window_height//2 - 180]
+        )
+        dpg.add_separator()
+        button_yes = dpg.add_button(label=" Да ", pos = [window_width//2 - 140, window_height//2 + 30],
+                                        callback=open_q6)
+        dpg.bind_item_font(button_yes, custom_font)
+        button_no = dpg.add_button(label=" Нет ", pos = [window_width//2 + 30, window_height//2 + 30],
+                                       callback=open_q6)
+        dpg.bind_item_font(button_no, custom_font)
+
+# Вопрос 3.3
+with dpg.window(no_resize=True, no_title_bar=True, show=False,
+                tag="q33") as q33:
+    with dpg.group(horizontal=True):
+        title_q1 = dpg.add_text(
+            default_value="Вопрос 3",
+            pos=[window_width//2 - 95, window_height//2 - 260]
+        )
+        dpg.bind_item_font(title_q1, custom_font)
+        q1 = dpg.add_text(
+            default_value="Ты готов страдать?",
+            pos=[window_width//2 - 425, window_height//2 - 180]
+        )
+        dpg.add_separator()
+        button_yes = dpg.add_button(label=" Да ", pos = [window_width//2 - 140, window_height//2 + 30],
+                                        callback=get_cpp)
+        dpg.bind_item_font(button_yes, custom_font)
+        button_no = dpg.add_button(label=" Нет ", pos = [window_width//2 + 30, window_height//2 + 30],
+                                       callback=open_q6)
+        dpg.bind_item_font(button_no, custom_font)
 
 # Главное окно
 with dpg.window(no_resize=True, no_title_bar=True,
