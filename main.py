@@ -27,7 +27,43 @@ def open_q2():
     dpg.configure_item("q1", show=False)
     dpg.configure_item("q2", show=True)
     dpg.set_primary_window("q2",True)
+def open_q31():
+    dpg.configure_item("q2", show=False)
+    dpg.configure_item("q31", show=True)
+    dpg.set_primary_window("q31",True)
+def open_q32():
+    dpg.configure_item("q2", show=False)
+    dpg.configure_item("q32", show=True)
+    dpg.set_primary_window("q32",True)
+def open_q31():
+    dpg.configure_item("q2", show=False)
+    dpg.configure_item("q33", show=True)
+    dpg.set_primary_window("q33",True)
+def open_q4():
+    dpg.configure_item("q31", show=False)
+    dpg.configure_item("q4", show=True)
+    dpg.set_primary_window("q4",True)
+def open_q5():
+    dpg.configure_item("q4", show=False)
+    dpg.configure_item("q5", show=True)
+    dpg.set_primary_window("q5",True)
+def open_q6():
+    dpg.configure_item("q5", show=False)
+    dpg.configure_item("q6", show=True)
+    dpg.set_primary_window("q6",True)
+def open_q7():
+    dpg.configure_item("q6", show=False)
+    dpg.configure_item("q7", show=True)
+    dpg.set_primary_window("q7",True)
+def open_q8():
+    dpg.configure_item("q7", show=False)
+    dpg.configure_item("q8", show=True)
+    dpg.set_primary_window("q8",True)
 
+def final():
+    dpg.configure_item("q8", show=False)
+    dpg.configure_item("result", show=True)
+    dpg.set_primary_window("result", True)
 
 # Вопрос 1
 with dpg.window(no_resize=True, no_title_bar=True, show=False,
