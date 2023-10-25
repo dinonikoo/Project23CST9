@@ -107,8 +107,13 @@ def open_q5():
     dpg.configure_item("q5", show=True)
     dpg.set_primary_window("q5",True)
 
-def open_q6():
+def open_q62():
     dpg.configure_item("q32", show=False)
+    dpg.configure_item("q6", show=True)
+    dpg.set_primary_window("q6",True)
+
+def open_q63():
+    dpg.configure_item("q33", show=False)
     dpg.configure_item("q6", show=True)
     dpg.set_primary_window("q6",True)
 
@@ -266,10 +271,10 @@ with dpg.window(no_resize=True, no_title_bar=True, show=False,
         )
         dpg.add_separator()
         button_yes = dpg.add_button(label=" Да ", pos = [window_width//2 - 140, window_height//2 + 30],
-                                        callback=open_q6)
+                                        callback=open_q62)
         dpg.bind_item_font(button_yes, custom_font)
         button_no = dpg.add_button(label=" Нет ", pos = [window_width//2 + 30, window_height//2 + 30],
-                                       callback=open_q6)
+                                       callback=open_q62)
         dpg.bind_item_font(button_no, custom_font)
 
 # Вопрос 3.3
@@ -290,7 +295,7 @@ with dpg.window(no_resize=True, no_title_bar=True, show=False,
                                         callback=get_cpp)
         dpg.bind_item_font(button_yes, custom_font)
         button_no = dpg.add_button(label=" Нет ", pos = [window_width//2 + 30, window_height//2 + 30],
-                                       callback=open_q6)
+                                       callback=open_q63)
         dpg.bind_item_font(button_no, custom_font)
 
 # Вопрос 4
