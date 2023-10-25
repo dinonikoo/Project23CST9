@@ -75,7 +75,6 @@ def return_0():
     dpg.set_primary_window("main", True)
 
 
-
 # Вопрос 1
 with dpg.window(no_resize=True, no_title_bar=True, show=False,
                 tag="q1") as q1:
@@ -96,6 +95,30 @@ with dpg.window(no_resize=True, no_title_bar=True, show=False,
         button_no = dpg.add_button(label=" Нет ", pos = [window_width//2 + 30, window_height//2 + 30],
                                    callback=get_1c)
         dpg.bind_item_font(button_no, custom_font)
+
+# Вопрос 2
+with dpg.window(no_resize=True, no_title_bar=True, show=False,
+                tag="q2") as q2:
+    with dpg.group(horizontal=True):
+        title_q1 = dpg.add_text(
+            default_value="Вопрос 2",
+            pos=[window_width//2 - 95, window_height//2 - 260]
+        )
+        dpg.bind_item_font(title_q1, custom_font)
+        q1 = dpg.add_text(
+            default_value="Твоя возрастная категория?",
+            pos=[window_width//2 - 425, window_height//2 - 180]
+        )
+        dpg.add_separator()
+        button_1 = dpg.add_button(label=" Школьник ", pos = [window_width//2 - 400, window_height//2 + 30],
+                                    callback=open_q31)
+        dpg.bind_item_font(button_1, custom_font)
+        button_2 = dpg.add_button(label=" В расцвете сил ", pos = [window_width//2 - 150, window_height//2 + 30],
+                                   callback=open_q32)
+        dpg.bind_item_font(button_2, custom_font)
+        button_2 = dpg.add_button(label=" За 50 ", pos=[window_width // 2 + 220, window_height // 2 + 30],
+                                  callback=open_q33)
+        dpg.bind_item_font(button_2, custom_font)
 
 # Главное окно
 with dpg.window(no_resize=True, no_title_bar=True,
