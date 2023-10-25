@@ -93,10 +93,10 @@ def open_q32():
     dpg.configure_item("q32", show=True)
     dpg.set_primary_window("q32",True)
 
-def open_q31():
+def open_q33():
     dpg.configure_item("q2", show=False)
     dpg.configure_item("q33", show=True)
-    dpg.set_primary_window("q33",True)
+    dpg.set_primary_window("q33", True)
 
 def open_q4():
     dpg.configure_item("q31", show=False)
