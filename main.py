@@ -19,11 +19,17 @@ dpg.configure_viewport(0, x_pos=400, y_pos=150, width=window_width, height=windo
 dpg.set_viewport_max_height(window_height)
 dpg.set_viewport_max_width(window_width)
 
+
+
 def open_q1():
     dpg.configure_item("main", show=False)
     dpg.configure_item("q1", show=True)
     dpg.set_primary_window("q1",True)
 
+def get_pascal():
+    dpg.configure_item("q31", show=False)
+    dpg.configure_item("pascal", show=True)
+    dpg.set_primary_window("pascal", True)
 
 # Вопрос 1
 with dpg.window(no_resize=True, no_title_bar=True, show=False,
