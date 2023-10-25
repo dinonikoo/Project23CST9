@@ -56,7 +56,11 @@ def get_javascript():
     dpg.configure_item("javascript", show=True)
     dpg.set_primary_window("javascript", True)
 
-
+def get_php():
+    dpg.configure_item("q7", show=False)
+    dpg.configure_item("php", show=True)
+    dpg.set_primary_window("php", True)
+    
 
 def open_q1():
     dpg.configure_item("main", show=False)
