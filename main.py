@@ -31,6 +31,21 @@ def get_pascal():
     dpg.configure_item("pascal", show=True)
     dpg.set_primary_window("pascal", True)
 
+def get_cpp():
+    dpg.configure_item("q33", show=False)
+    dpg.configure_item("cpp", show=True)
+    dpg.set_primary_window("cpp", True)
+
+def get_swift():
+    dpg.configure_item("q4", show=False)
+    dpg.configure_item("swift", show=True)
+    dpg.set_primary_window("swift", True)
+
+def get_csharp():
+    dpg.configure_item("q5", show=False)
+    dpg.configure_item("csharp", show=True)
+    dpg.set_primary_window("csharp", True)
+
 # Вопрос 1
 with dpg.window(no_resize=True, no_title_bar=True, show=False,
                 tag="q1") as q1:
